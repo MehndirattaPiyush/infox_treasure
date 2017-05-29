@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<LinearLayout
+    android:id="@+id/content_instruction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.infox.qr.qrcodereader.Instruction"
+    tools:showIn="@layout/activity_instruction">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Instructions"
+        android:id="@+id/intt"
+        android:textAlignment="center"
+        android:onClick="onClick"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/head_inst"
+        android:textSize="20dp"
+        android:text="GENERAL INSTRUCTIONS"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/instagram"
+        android:text="1. Both the team members should be present at the final destination to claim the prize.\n2. The clues are in the form of QR codes. You have to scan the code to generate your clue.\n
+3. Read the clue and find the next spot.\n4. There are 7 clues in total.\n 5. The clues must be scanned in an order from 1-7.\n
+6. If a team scans the clues in wrong order, they will be automatically disqualified from the game.\n7 .You must take a screenshot of the code generated, which will help you further in the game.\n
+8. Three wrong QR-Code Scan will lead to instant Disqualification."/>
+
+
+<LinearLayout
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/head_inst"
+        android:text="QR CODE SECTION"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instagram"
+        android:text="1. You will be provided with a QR code which contains the clue to the next location.\n 2.6. There are total 5 QR codes (Including the one at home), When you are done with as many you can scan, return to the start point.
+        \n3. Solve the clue and go to the location in the QR code to receive points.\n 4. You can skip any riddle using the skip clue button.
+        .\n 5. Remember you cannot scan a QR once you have skipped it.\n6. Your results will be only accepted till 5.45pm. Any submissions after that will not be considered.\n"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/below_inst"
+        android:text="TASK SECTION"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instagram_belo"
+        android:text="1. A list of tasks has been listed in the perform section.\n
+        2. You can access it from the perform button\n 3. All selfies need to contain the faces of all the team members.
+        \n4. Message your videos/photos to 7065452675. \n5. When you are done with submitting your last answer, send a message 'I AM DONE'. The time of this message will be recorded as your time.
+        If this message is not received, your participation will not be considered.\n6. Submissions will be accepted only till 6pm.\n7. The validity of the result of any tasks performed is upto the sole discretion of the volunteers/organisers.\n "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/below_inst_rules"
+        android:text="JUDGING CRITERIA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instagram_belo_desc"
+        android:text="1. The sum of the points will be calculated to rank the participants.\nIn case of a tie, the participant who submitted solutions earlier on Whatsapp will be given preference.
+        \n3. All decisions by the organizers are final and non-arguable."/>
+
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
